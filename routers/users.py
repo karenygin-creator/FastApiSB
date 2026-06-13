@@ -1,11 +1,13 @@
+
+
 from fastapi import APIRouter, HTTPException
 from fastapi.params import Depends
 from sqlalchemy.orm import Session
 
-from auth import hash_password
+from auth import hash_password, verify_password, create_access_token
 from database import get_db
 from models import User
-from schemas import UserResponce, UserCreate
+from schemas import UserResponce, UserCreate, UserLogin, Token
 
 router=APIRouter(prefix="/users", tags=["Users"])
 
@@ -23,3 +25,12 @@ def register_user(user_data: UserCreate,db:Session=Depends(get_db)):
     db.commit()
     db.refresh(new_user)
     return new_user
+@router.post("/login", response_model=Token)
+def login_user(user_data: UserLogin, db:Session=Depends(get_db)):
+    user=db.query(User).filter(User.name==user_data.username).first()
+    if not user:
+        raise HTTPException(status_code=401, detail="Неверный логин или пароль")
+    if not verify_password(user_data.password, user.password):
+        raise HTTPException(status_code=401, detail="Неверный логин или пароль")
+    access_token=create_access_token(data={"sub": user.name})
+    return {"access_token": access_token, "token_type": "bearer"}
