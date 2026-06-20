@@ -7,7 +7,7 @@ from starlette.staticfiles import StaticFiles
 
 from database import engine, Base
 from routers import users
-
+from routers.notes import router as notes_router
 
 Base.metadata.create_all(bind=engine)
 app=FastAPI(title="To-Do List Api", description="Для заметок")
@@ -16,3 +16,4 @@ def home():
     return {"message": "To-Do List Api"}
 
 app.include_router(users.router)
+app.include_router(notes_router)
