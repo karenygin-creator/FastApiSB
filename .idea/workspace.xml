@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4af1420f-d1b7-46fd-a0be-89de14e8a6be" name="Changes" comment="wewewe111ww">
+    <list default="true" id="4af1420f-d1b7-46fd-a0be-89de14e8a6be" name="Changes" comment="wewewe111wwrfrfr">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routers/notes.py" beforeDir="false" afterPath="$PROJECT_DIR$/routers/notes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routers/users.py" beforeDir="false" afterPath="$PROJECT_DIR$/routers/users.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +90,7 @@
       <workItem from="1780812269281" duration="4000" />
       <workItem from="1781341686034" duration="9398000" />
       <workItem from="1781417150989" duration="9000" />
-      <workItem from="1781946411980" duration="3424000" />
+      <workItem from="1781946411980" duration="8252000" />
     </task>
     <task id="LOCAL-00001" summary="wewewe">
       <option name="closed" value="true" />
@@ -118,7 +116,15 @@
       <option name="project" value="LOCAL" />
       <updated>1781352062051</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="wewewe111wwrfrfr">
+      <option name="closed" value="true" />
+      <created>1781951194962</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1781951194962</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,6 +134,7 @@
     <MESSAGE value="wewewe" />
     <MESSAGE value="wewewe111" />
     <MESSAGE value="wewewe111ww" />
-    <option name="LAST_COMMIT_MESSAGE" value="wewewe111ww" />
+    <MESSAGE value="wewewe111wwrfrfr" />
+    <option name="LAST_COMMIT_MESSAGE" value="wewewe111wwrfrfr" />
   </component>
 </project>
